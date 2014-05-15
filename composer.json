@@ -1,0 +1,16 @@
+{
+    "name": "rablab/showcase",
+    "description": "Provides a showcase of products or services for a business or personal showcase.",
+    "homepage": "http://fabriciorabelo.com",
+    "keywords": ["october", "cms", "rablab", "showcase", "plugin"],
+    "authors": [
+        {
+            "name": "Fabricio Pereira Rabelo",
+            "email": "contato@fabriciorabelo.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.4.0"
+    }
+}
