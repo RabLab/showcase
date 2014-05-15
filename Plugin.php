@@ -13,14 +13,4 @@ class Plugin extends \System\Classes\PluginBase
             'icon' => 'icon-share'
         ];
     }
-    /*
-    public function registerComponents()
-    {
-        return [
-            'Ralab\Showcase\Components\View' => 'itemView',
-            'Ralab\Showcase\Components\Index' => 'showCase',
-            'Ralab\Showcase\Components\Category' => 'itemView',
-        ];
-    }     
-     */
 }
