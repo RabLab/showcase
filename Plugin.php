@@ -12,7 +12,7 @@ class Plugin extends PluginBase
     {
         return [
             'name'        => 'Showcase',
-            'description' => 'A robust showcase platform plugin. Can be used to show products, services or until like a photos gallery. Created under RainLab Blog plugin.',
+            'description' => 'A robust showcase platform plugin, can be used to show products, services or until like a photos gallery.',
             'author'      => 'Fabricio Pereira Rabelo @ by Alexey Bobkov, Samuel Georges',
             'icon'        => 'icon-image'
         ];

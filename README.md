@@ -1,6 +1,6 @@
 # Showcase Plugin
 
-A robust showcase platform plugin for October CMS. Can be used to show products, services or until like a photos gallery. Created under RainLab Blog plugin.
+A robust showcase platform plugin for October CMS, can be used to show products, services or until like a photos gallery. Created under RainLab Blog plugin.
 
 ## Editing items
 
