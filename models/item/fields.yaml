@@ -1,0 +1,110 @@
+# ===================================
+#  Field Definitions
+# ===================================
+
+fields:
+
+  title:
+    label: Title
+    span: left
+    placeholder: New item title
+
+  slug:
+    label: slug
+    span: right
+    placeholder: new-item-slug
+    attributes:
+      data-input-preset: 'input[name="Item[title]"]'
+      data-input-preset-type: slug
+      data-input-preset-closest-parent: form
+
+  toolbar:
+    type: partial
+    path: item_toolbar
+    cssClass: collapse-visible
+
+# tabs:
+#   fields:
+
+#     excerpt:
+#       tab: Details
+#       label: Excerpt
+#       type: textarea
+#       size: small
+
+secondaryTabs:
+  stretch: true
+  fields:
+    content:
+      tab: Edit
+      stretch: true
+      type: codeeditor
+      span: left
+      cssClass: no-padding
+      options:
+        language: markdown
+        showGutter: false
+        wrapWords: true
+        fontSize: 13
+        margin: 15
+
+    preview:
+      type: RabLab\Showcase\FormWidgets\Preview
+      tab: Edit
+      stretch: true
+      span: right
+      cssClass: no-padding
+
+    categories:
+      tab: Categories
+      type: relation
+      commentAbove: Select categories the showcase item belongs to
+      placeholder: There are no categories, you should create one first!
+
+    published:
+      tab: Manage
+      label: Published
+      span: left
+      type: checkbox
+
+    published_at:
+      tab: Manage
+      label: Published on
+      span: left
+      type: datepicker
+      cssClass: checkbox-align
+      options:
+        mode: date
+
+    excerpt:
+      tab: Manage
+      label: Excerpt
+      type: textarea
+      size: small
+
+    # visibility:
+    #   tab: Manage
+    #   label: Visibility
+    #   type: balloon-selector
+    #   options:
+    #     - Public
+    #     - Sticky
+    #     - Private
+
+    # status:
+    #   tab: Manage
+    #   label: Status
+    #   type: balloon-selector
+    #   options:
+    #     - Draft
+    #     - Review
+    #     - Published
+
+    featured_images:
+      tab: Manage
+      label: Featured Images
+      type: fileupload
+      options:
+        mode: image
+        image-width: 200
+        image-height: 200

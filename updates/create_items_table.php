@@ -12,17 +12,13 @@ class CreateItemsTable extends Migration
         {
             $table->engine = 'InnoDB';
             $table->increments('id');
-            $table->integer('user_id')->unsigned()->index();
-            $table->string('title', 100);
-            $table->string('slug', 100)->unique()->index();
-            $table->char('thumb_id', 15);
-            $table->interger('category_id')->nullable();
-            $table->text('description')->nullable();
-            $table->string('metadata', 250)->nullable();
-            $table->text('keywords')->nullable();
-            $table->boolean('enable_comments')->default(false);
-            $table->boolean('published')->default(false);            
-            $table->timestamp('published_at')->nullable();            
+            $table->integer('user_id')->unsigned()->nullable()->index();
+            $table->string('title')->nullable();
+            $table->string('slug')->index();
+            $table->text('excerpt')->nullable();
+            $table->text('content')->nullable();
+            $table->timestamp('published_at')->nullable();
+            $table->boolean('published')->default(false);
             $table->timestamps();
         });
     }

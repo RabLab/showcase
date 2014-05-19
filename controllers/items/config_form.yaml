@@ -1,0 +1,16 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+name: Showcase Item
+form: @/plugins/rablab/showcase/models/item/fields.yaml
+modelClass: RabLab\Showcase\Models\Item
+defaultRedirect: rablab/showcase/items
+
+create:
+    redirect: rablab/showcase/items/update/:id
+    redirectClose: rablab/showcase/items
+
+update:
+    redirect: rablab/showcase/items
+    redirectClose: rablab/showcase/items

@@ -1,0 +1,16 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+name: Showcase Category
+form: @/plugins/rablab/showcase/models/category/fields.yaml
+modelClass: RabLab\Showcase\Models\Category
+defaultRedirect: rablab/showcase/categories
+
+create:
+    redirect: rablab/showcase/categories/update/:id
+    redirectClose: rablab/showcase/categories
+
+update:
+    redirect: rablab/showcase/categories
+    redirectClose: rablab/showcase/categories

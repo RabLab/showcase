@@ -1,0 +1,42 @@
+<ul class="item-list">
+    {% for item in items %}
+        <li>
+            <h3><a href="{{ itemPage|page({'slug': item.slug}) }}">{{ item.title }}</a></h3>
+
+            <p class="info">
+                Published
+                {% if item.categories.count %} in {% endif %}
+                {% for category in item.categories %}
+                    <a href="{{ categoryPage|page({'slug': category.slug}) }}">{{ category.name }}</a>{% if not loop.last %}, {% endif %}
+                {% endfor %}
+                on {{ item.publshed_at|date('M d, Y') }}
+            </p>
+
+            {% if item.excerpt %}
+                {{ item.excerpt }}
+            {% else %}
+                {{ item.content_html|raw }}
+            {% endif %}
+        </li>
+    {% else %}
+        <li class="no-data">{{ noItemsMessage }}</li>
+    {% endfor %}
+</ul>
+
+{% if items.getLastPage > 1 %}
+    <ul class="pagination">
+        {% if items.getCurrentPage > 1 %}
+            <li><a href="{{ this.page.baseFileName|page({ page: (items.getCurrentPage-1) }) }}">&larr; Prev</a></li>
+        {% endif %}
+
+        {% for page in 1..items.getLastPage %}
+            <li class="{{ items.getCurrentPage == page ? 'active' : null }}">
+                <a href="{{ this.page.baseFileName|page({ page: page }) }}">{{ page }}</a>
+            </li>
+        {% endfor %}
+
+        {% if items.getLastPage > items.getCurrentPage %}
+            <li><a href="{{ this.page.baseFileName|page({ page: (items.getCurrentPage+1) }) }}">Next &rarr;</a></li>
+        {% endif %}
+    </ul>
+{% endif %}

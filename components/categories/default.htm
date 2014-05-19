@@ -1,0 +1,11 @@
+<ul class="category-list">
+    {% for category in categories %}
+        {% set itemCount = category.itemCount %}
+        <li {% if category.slug == currentCategorySlug %}class="active"{% endif %}>
+            <a href="{{ categoryPage|page({'slug': category.slug}) }}">{{ category.name }}</a> 
+            {% if itemCount %}
+                <span class="badge">{{ itemCount }}</span>
+            {% endif %}
+        </li>
+    {% endfor %}
+</ul>

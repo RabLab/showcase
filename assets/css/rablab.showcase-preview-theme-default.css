@@ -1,0 +1,70 @@
+.showcase-item-preview-container .preview-content {
+  color: #515c5d;
+  font-family: "Helvetica", sans-serif;
+  line-height: 180%;
+}
+.showcase-item-preview-container .preview-content h1,
+.showcase-item-preview-container .preview-content h2,
+.showcase-item-preview-container .preview-content h3,
+.showcase-item-preview-container .preview-content h4,
+.showcase-item-preview-container .preview-content h5,
+.showcase-item-preview-container .preview-content h6 {
+  margin-top: 20px;
+  font-weight: bold;
+}
+.showcase-item-preview-container .preview-content h1:first-child,
+.showcase-item-preview-container .preview-content h2:first-child,
+.showcase-item-preview-container .preview-content h3:first-child,
+.showcase-item-preview-container .preview-content h4:first-child,
+.showcase-item-preview-container .preview-content h5:first-child,
+.showcase-item-preview-container .preview-content h6:first-child {
+  margin-top: 0;
+}
+.showcase-item-preview-container .preview-content *:last-child {
+  margin-bottom: 0;
+}
+.showcase-item-preview-container .preview-content h1 {
+  font-size: 30px;
+}
+.showcase-item-preview-container .preview-content h2 {
+  font-size: 26px;
+}
+.showcase-item-preview-container .preview-content h3 {
+  font-size: 24px;
+}
+.showcase-item-preview-container .preview-content h4 {
+  font-size: 22px;
+}
+.showcase-item-preview-container .preview-content h5 {
+  font-size: 20px;
+}
+.showcase-item-preview-container .preview-content h6 {
+  font-size: 18px;
+}
+.showcase-item-preview-container .preview-content p,
+.showcase-item-preview-container .preview-content ol,
+.showcase-item-preview-container .preview-content ul {
+  font-size: 14px;
+}
+.showcase-item-preview-container .preview-content h1,
+.showcase-item-preview-container .preview-content h2,
+.showcase-item-preview-container .preview-content h3,
+.showcase-item-preview-container .preview-content h4,
+.showcase-item-preview-container .preview-content h5,
+.showcase-item-preview-container .preview-content h6,
+.showcase-item-preview-container .preview-content p,
+.showcase-item-preview-container .preview-content ol,
+.showcase-item-preview-container .preview-content ul {
+  margin-bottom: 15px;
+}
+.showcase-item-preview-container .preview-content pre.prettyprint {
+  border-width: 0;
+  padding: 13px 16px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  line-height: 130%;
+}
+.showcase-item-preview-container .preview-content img {
+  width: 100%;
+}
