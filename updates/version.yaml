@@ -6,3 +6,5 @@
 1.0.2:
     - Added the processed HTML content column to the items table
     - create_items_content_html.php
+1.0.3:
+    - Updated informations, images order and plugin icons

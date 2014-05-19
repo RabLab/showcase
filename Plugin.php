@@ -12,8 +12,8 @@ class Plugin extends PluginBase
     {
         return [
             'name'        => 'Showcase',
-            'description' => 'A robust showcase platform plugin, can be used to show products, services or until like a photos gallery.',
-            'author'      => 'Fabricio Pereira Rabelo @ by Alexey Bobkov, Samuel Georges',
+            'description' => 'Provides a showcase plugin, can be used to show products, services or until like a photos gallery.',
+            'author'      => 'Fabricio Pereira Rabelo',
             'icon'        => 'icon-image'
         ];
     }
@@ -41,13 +41,13 @@ class Plugin extends PluginBase
                 'sideMenu' => [
                     'items' => [
                         'label'       => 'Items',
-                        'icon'        => 'icon-copy',
+                        'icon'        => 'icon-file-text-o',
                         'url'         => Backend::url('rablab/showcase/items'),
                         'permissions' => ['showcase.access_items'],
                     ],
                     'categories' => [
                         'label'       => 'Categories',
-                        'icon'        => 'icon-list-ul',
+                        'icon'        => 'icon-list',
                         'url'         => Backend::url('rablab/showcase/categories'),
                         'permissions' => ['showcase.access_categories'],
                     ],
