@@ -41,7 +41,7 @@ class Plugin extends PluginBase
                 'sideMenu' => [
                     'items' => [
                         'label'       => 'Items',
-                        'icon'        => 'icon-image',
+                        'icon'        => 'icon-copy',
                         'url'         => Backend::url('rablab/showcase/items'),
                         'permissions' => ['showcase.access_items'],
                     ],
