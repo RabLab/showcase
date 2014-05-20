@@ -8,3 +8,6 @@
     - create_items_content_html.php
 1.0.3:
     - Updated informations, images order and plugin icons
+1.0.4:
+    - Updated order and limit on list items
+    - Fixed published_at timestamp

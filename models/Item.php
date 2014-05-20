@@ -73,8 +73,37 @@ class Item extends Model
         ;
     }
 
-    public function beforeSave()
+    public function beforeCreate()
     {
+	if($this->published_at)
+	{
+	    $timestamp = strtotime($this->published_at);
+	    $this->published_at = date('Y-m-d', $timestamp) . ' ' . date('H:i:s');
+	}
+    }
+    
+    public function beforeUpdate()
+    {
+	// Original date
+	$original = $this->original;
+	$org_timestamp = strtotime($original['published_at']);
+	$org_published_at = date('Y-m-d', $org_timestamp);
+	// current date
+	$timestamp = strtotime($this->published_at);
+	$published_at = date('Y-m-d', $timestamp);
+	
+	if($published_at != $org_published_at)
+	{
+	    $this->published_at = $published_at . ' ' . date('H:i:s');
+	}
+	else
+	{
+	    $this->published_at = date('Y-m-d H:i:s', $org_timestamp);
+	}
+    }
+    
+    public function beforeSave()
+    {	
         $this->content_html = self::formatHtml($this->content);
     }
 }

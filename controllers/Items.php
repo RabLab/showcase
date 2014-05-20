@@ -5,7 +5,7 @@ use Backend\Classes\Controller;
 use RabLab\Showcase\Models\Item;
 
 class Items extends Controller
-{
+{    
     public $implement = [
         'Backend.Behaviors.FormController',
         'Backend.Behaviors.ListController'

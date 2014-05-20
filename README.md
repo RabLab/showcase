@@ -104,15 +104,6 @@ The next example shows the basic component usage on the showcase page:
     {% else %}
         <h2>{{ showcaseItem.title }}</h2>
 
-        <!-- Use this code to get the first image -->
-        <img src="{{ showcaseItem.featured_images[0].path }}" width="100"><br />
-
-        <!-- Use a loop to get all images to use like a gallery -->
-        {% for images in showcaseItem.featured_images %}
-            <img src="{{ images.path }}" width="100"><br >
-        {% endfor %}
-        <!-- end loop -->
-
         {% component 'item' %}
     {% endif %}
 

@@ -18,7 +18,10 @@ recordUrl: rablab/showcase/categories/update/:id
 noRecordsMessage: backend::lang.list.no_records
 
 # Records to display per page
-recordsPerPage: 5
+recordsPerPage: 15
+
+# Sort by
+defaultSort: name
 
 # Display checkboxes next to each record
 # showCheckboxes: yes
